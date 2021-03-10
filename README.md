@@ -36,15 +36,15 @@ It is used to initiallise terraform, where it can analyse and install the plugin
 It is best practice to always execute the command before executing the code.
                    
 
-``` terraform plan ```
+``` terraform plan ```\
 This command will make sure, if any changes required to your code or need to destroy an element.\
 It will give you a complete view about the code execution, like what can be the output of the code.
                    
 
-``` terraform apply ```
+``` terraform apply ```\
 Once you are done with terraform init and plan, you can execute this command so that it will apply the terraform file you have created and execute all the resources accordingly.
                     
 
-``` terraform destroy ```
+``` terraform destroy ```\
 This command will destroy the resources created by the terrform apply command.
 
