@@ -16,14 +16,15 @@ Static credentials can also be provided by adding an access_key and secret_key i
 ![terraform1](https://user-images.githubusercontent.com/80195849/110632640-2595df80-81a8-11eb-9443-69b14b82c236.png)
 
 Example :
-
-**provider "aws" {\
+```
+provider "aws" {\
   region     = "us-west-2"\
   access_key = "my-access-key"\
   secret_key = "my-secret-key"\
-}**
+}
+```
 
-Here in this assignment static credentials are not used. aws-vault has been configured.\
+Here in this assignment static credentials are not used. aws-vault has been configured.
 
 **variables.tf** file is created\
 Where all the variables are declared which is been used in main.tf file.
