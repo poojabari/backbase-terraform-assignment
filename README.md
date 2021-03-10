@@ -13,9 +13,6 @@ aws configure is also the option where you can store the access_key and secret_k
 Static credentials can also be provided by adding an access_key and secret_key in-line in the AWS provider block:\
 **Example:** 
 
-![terraform1](https://user-images.githubusercontent.com/80195849/110632640-2595df80-81a8-11eb-9443-69b14b82c236.png)
-
-Example :
 ```terraform
 provider "aws" {\
   region     = "us-west-2"\
@@ -32,19 +29,22 @@ Where all the variables are declared which is been used in main.tf file.
 **main.tf** file is created\
 Where resources are created for KMS-KEY and S3 Bucket, with life cycle rule is configured.
 
-**Command list:**
-1. terraform init
-2. terraform plan
-3. terraform apply
-4. terraform destroy
+Commands used
 
-- terraform init : It is used to initiallise terraform, where it can analyse and install the plugins if required in the code.\
-                   It is best practice to always execute the command before executing the code.
+``` terraform  terraform init ```  
+It is used to initiallise terraform, where it can analyse and install the plugins if required in the code.\
+It is best practice to always execute the command before executing the code.
                    
-- terraform plan : This command will make sure, if any changes required to your code or need to destroy an element.\
-                   It will give you a complete view about the code execution, like what can be the output of the code.
+
+``` terraform  terraform plan ```
+This command will make sure, if any changes required to your code or need to destroy an element.\
+It will give you a complete view about the code execution, like what can be the output of the code.
                    
-- terraform apply : Once you are done with terraform init and plan, you can execute this command so that it will apply the terraform file\
-                    you have created and execute all the resources accordingly.
+
+``` terraform  terraform apply ```
+Once you are done with terraform init and plan, you can execute this command so that it will apply the terraform file you have created and execute all the resources accordingly.
                     
-- terraform destroy : This command will destroy the resources created by the terrform apply command.
+
+``` terraform  terraform destroy ```
+This command will destroy the resources created by the terrform apply command.
+
