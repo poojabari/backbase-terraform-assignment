@@ -17,10 +17,10 @@ Example:
 
 Example :
 
-**provider "aws" {
-  region     = "us-west-2"
-  access_key = "my-access-key"
-  secret_key = "my-secret-key"
+**provider "aws" {\
+  region     = "us-west-2"\
+  access_key = "my-access-key"\
+  secret_key = "my-secret-key"\
 }**
 
 Here in this assignment static credentials are not used. aws-vault has been configured.
