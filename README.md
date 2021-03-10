@@ -16,7 +16,7 @@ Static credentials can also be provided by adding an access_key and secret_key i
 ![terraform1](https://user-images.githubusercontent.com/80195849/110632640-2595df80-81a8-11eb-9443-69b14b82c236.png)
 
 Example :
-```
+```terraform
 provider "aws" {\
   region     = "us-west-2"\
   access_key = "my-access-key"\
