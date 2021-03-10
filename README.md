@@ -1,4 +1,4 @@
-# Terraform-assignment\
+# Terraform-assignment
 
 Write a terraform module that creates an S3 bucket and a KMS key used to encrypt the
 contents of the s3 bucket. When running the module, the following inputs are mandatory:
