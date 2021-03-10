@@ -1,7 +1,7 @@
 # backbase-terraform-assignment
 **Terraform assignment for Backbase**
 Write a terraform module that creates an S3 bucket and a KMS key used to encrypt the
-contents of the s3 bucket. When running the module, the following inputs are mandatory:\
+contents of the s3 bucket. When running the module, the following inputs are mandatory:
 - bucket-name (used to name the s3 bucket created by this module)
 - region (the aws region in which to create the resources)
 
@@ -11,7 +11,7 @@ There are multiple ways to access aws account from which aws-vault is one of the
 aws configure is also the option where you can store the access_key and secret_key of aws account profile.\
 
 Static credentials can also be provided by adding an access_key and secret_key in-line in the AWS provider block:\
-**Example:** \
+**Example:** 
 
 ![terraform1](https://user-images.githubusercontent.com/80195849/110632640-2595df80-81a8-11eb-9443-69b14b82c236.png)
 
