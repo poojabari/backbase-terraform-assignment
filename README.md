@@ -48,3 +48,18 @@ Once you are done with terraform init and plan, you can execute this command so 
 ``` terraform destroy ```\
 This command will destroy the resources created by the terrform apply command.
 
+**Deviation from the Requirement**
+A lifecycle rule which, by default, after 10 days transitions the data to “Infrequently
+Accessed” and after 20 days to “Glacier”. The number of days for both scenarios must
+be configurable via inputs to your module.
+
+While providing an input for the same requirement
+![terraform4](https://user-images.githubusercontent.com/80195849/110649543-fc7e4a80-81b9-11eb-8bd9-59dbf8bd2704.png)
+
+I face following error message
+![terraform3](https://user-images.githubusercontent.com/80195849/110649669-191a8280-81ba-11eb-916c-4326b3d6d57c.png)
+
+I have done some research on this below are the findings :
+![terraform5](https://user-images.githubusercontent.com/80195849/110651241-8da1f100-81bb-11eb-912b-21b7d6388049.png)
+
+
