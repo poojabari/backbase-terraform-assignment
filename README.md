@@ -1,5 +1,5 @@
-# backbase-terraform-assignment
-**Terraform assignment for Backbase**
+# Terraform-assignment\
+
 Write a terraform module that creates an S3 bucket and a KMS key used to encrypt the
 contents of the s3 bucket. When running the module, the following inputs are mandatory:
 - bucket-name (used to name the s3 bucket created by this module)
@@ -14,10 +14,10 @@ Static credentials can also be provided by adding an access_key and secret_key i
 **Example:** 
 
 ```terraform
-provider "aws" {\
-  region     = "us-west-2"\
-  access_key = "my-access-key"\
-  secret_key = "my-secret-key"\
+provider "aws" {
+  region     = "us-west-2"
+  access_key = "my-access-key"
+  secret_key = "my-secret-key"
 }
 ```
 
@@ -48,7 +48,7 @@ Where resources are created for KMS-KEY and S3 Bucket, with life cycle rule is c
 ``` terraform destroy ```\
 *This command will destroy the resources created by the terrform apply command.*
 
-**Deviation from the Requirement**
+**Deviation from the Requirement**\
 A lifecycle rule which, by default, after 10 days transitions the data to “Infrequently
 Accessed” and after 20 days to “Glacier”. The number of days for both scenarios must
 be configurable via inputs to your module.
